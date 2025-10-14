@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Festival 2025</title>
+    <link rel="stylesheet" href="tablecapstone.css">
+</head>
+<body>
+   <h1>Film Festival 2025 Schedule</h1>
+   <table cellspacing="0">
+    <thead>
+        <tr>
+        <th>Movie</th>
+        <th>Director</th>
+        <th>Screen</th>
+        <th colspan="2">Date-Time</th>
+        <th colspan="2">Events Type</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Inception</td>
+            <td>Christopher Nolan</td>
+            <td>Main Hall</td>
+            <td>12 October</td>
+            <td>19:30</td>
+            <td>Film Screening</td>
+            <td>Panel</td>
+        </tr>
+        <tr>
+           <td>Parasite</td>
+            <td> Bong Joon-ho</td>
+            <td>Main Hall</td>
+            <td>12 October</td>
+            <td>19:30</td>
+            <td></td>
+            <td>Panel</td>
+        </tr>
+        <tr>
+            <td>Spirited Away</td>
+            <td> Hayao Miyazaki</td>
+            <td>Main Hall</td>
+            <td>12 October</td>
+            <td>19:30</td>
+            <td>Film Screening</td>
+            <td></td>
+        </tr>
+        <tr>
+             <td>The Social Network</td>
+            <td> David Fincher</td>
+            <td>Main Hall</td>
+            <td>12 October</td>
+            <td>19:30</td>
+            <td>Film Screening</td>
+            <td></td>
+        </tr>
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="7">Coming Soon...</th>
+        </tr>
+
+    </tfoot>
+   </table> 
+   <form>
+    <div class="form">
+        <label for="name">Your Name: </label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form">
+        <label for="mail">Email: </label>
+        <input type="email" name="email" id="mail" required>
+    </div>
+    <div class="form">
+        <label for="events">Choose Your Event:</label>
+        <select name="event" id="events">
+            <option value="event1">Inception</option>
+            <option value="event2">Parasite</option>
+            <option value="event3">The Social Network</option>
+            <option value="event4">Spirited Away</option>
+        </select>
+    </div>
+   
+    <div class="form checkbox">
+    <label>
+        <input type="checkbox" name="screen"> Film Screening
+    </label>
+</div>
+
+<div class="form checkbox">
+    <label>
+        <input type="checkbox" name="panel"> Panel
+    </label>
+</div>
+
+    <div >
+        <input type="submit" value="Send" name="send" class="button" style="margin: auto;">
+    </div>
+   </form>
+
+</body>
+</html>

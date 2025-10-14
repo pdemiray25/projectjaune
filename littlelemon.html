@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+      <meta property="og:title" content="Our Menu">
+  <meta property="og:type"  content="website">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:url"   content="https://littlelemon/">
+  <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Little Lemon">
+    <link rel="stylesheet" href="littlelemon.css">
+</head>
+<body>
+    <header>
+<img src="images/lemon.png">
+    </header>
+    <nav>
+<ul>
+    <li>
+        <a href="omelette.html" target="_blank">Recipies</a>
+    </li>
+    <li>
+        <a href="myportfoli.html" target="_blank">About Me</a>
+    </li>
+    <li>
+        <a href="ourmenu.html" target="_blank">More</a>
+    </li>
+</ul>
+    </nav>
+    <Main>
+        <h1>Our Menu</h1>
+        <article>
+            <h2>Blog</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+        <article>
+            <h2>New Menu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veritatis optio animi quasi, assumenda corrupti 
+                labore iure asperiores sit, excepturi laborum, autem iusto officiis? 
+                Molestias labore dolorum quaerat explicabo ab?</p>
+        </article>
+        <br>
+        <video  width="640" height="360" controls>
+            <source src="images/video.mp4" type="video/mp4">
+        </video>
+        <h2>Booking for Table</h2>
+        <form action="" method="post">
+            <div>
+                <label for="booking_date">Booking Date 
+                    <input type="date" id="booking_date" name="date" required>
+                </label>
+            </div>
+            <div>
+                <label for="booking_person"> Number of People
+                    <input type="range" name="person" id="booking_person" min="1" max="10" value="4" oninput="this.nextElementSibling.value=this.value">
+                    <output>4</output>
+                </label>
+            </div>
+            <div>
+                <label for="booking_location">Location</label>
+            <input list="locations" name="booking_location" id="booking_location">
+            <datalist id="locations">
+                <option value="Hometown"></option>
+                <option value="Uptown"></option>
+            </datalist>
+            </div>
+            <div>
+                <label for="rating">Rating</label>
+                <input type="range" id="rating" name="rating" list="ratings" min="1" max="5" 
+                value="5" oninput="this.nextElementSibling.value=this.value">
+                <output>5</output>
+                <datalist id="ratings">
+                    <option value="1" label="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5" label="5"></option>
+                </datalist>
+            </div>
+
+        </form>
+
+    </Main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

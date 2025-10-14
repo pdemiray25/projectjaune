@@ -1,0 +1,52 @@
+.redtext{
+    color: red;
+}
+.highlight{
+    background-color: yellow;
+}
+#special{
+    font-weight: bold;
+
+}
+div > .intro {
+    background-color: rgb(84, 84, 228);
+    color: aliceblue;
+}
+.btn{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn:hover{
+    color:  rgb(84, 186, 84);
+    background-color: rgb(233, 178, 89);
+}
+div p{
+    width: 200px;
+
+height: 100px;
+
+padding: 10px;
+
+border: 2px solid red;
+
+margin: 5px;
+
+}
+.container {
+  display: flex;              /* flexbox başlat */
+  justify-content: center;    /* yatayda ortala */
+  align-items: center;        /* dikeyde ortala */
+  height: 100vh;              /* container’ın yüksekliği tüm ekran */
+  gap: 10px;                  /* flex item’lar arası boşluk */
+}
+
+.container div {
+  width: 50px;
+  height: 50px;
+  background-color: #721817;
+  color: white;
+  display: flex;               /* iç yazıyı ortalamak için */
+  justify-content: center;     /* yatay ortalama */
+  align-items: center;         /* dikey ortalama */
+  border-radius: 8px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMovieList</title>
+    <link href="MyMovieList.css" rel="stylesheet">
+</head>
+<body>
+   <header>
+<h1>My Favorite Movies</h1>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+   </header> 
+   <main id="home">
+    <section id="categories">
+        <h2>Favorite Movie Genres</h2>
+        <ul>
+            <li>Adventure</li>
+            <li>Comedy</li>
+            <li>Thriller</li>
+        </ul>
+    </section>
+    <section >
+        <h2>Some Movies</h2>
+        <table>
+           <tr>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Year</th>
+           </tr>
+           <tr>
+            <td>Inception</td>
+            <td>Christopher Nolan</td>
+            <td>2010</td>
+           </tr>
+           <tr>
+            <td>The Godfather</td>
+            <td>Francis Ford Coppola</td>
+            <td>1972</td>
+           </tr>
+           <tr>
+            <td>Parasite</td>
+            <td>Bong Joon-ho</td>
+            <td>2019</td>
+           </tr>
+        </table>
+
+    </section>
+    <section id="gallery">
+        <img src="images/thegodfather.png" alt="theGodFather">
+        <img src="images/parasite.png" alt="parasite">
+        <img src="images/inception.png" alt="inception">
+
+    </section>
+    <section>
+        <h2>Some Useful Links</h2>
+        <ol>
+            <li>
+                <a href="https://www.imdb.com/" target="_blank">Go to IMDb</a>
+                
+            </li>
+            <li><a href="https://www.rottentomatoes.com/" target="_blank">Go to Rotten Tomatoes</a></li>
+        </ol>
+    </section>
+    <section id="contact">
+
+        <h2>Contact and Suggestion Form</h2>
+        <form>
+
+          <label for="name">Your Name</label> 
+          <input type="text" id="name" name="name">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="mail">
+          <label for="movie">Favorite Movie</label>
+          <input type="text" id="movie" name="movie">
+
+          <h3>Reading Preferences:</h3>
+
+<label for="fiction">
+  <input type="checkbox" id="fiction" name="preference" value="Fiction">
+  Fiction
+</label>
+
+<label for="nonfiction">
+  <input type="checkbox" id="nonfiction" name="preference" value="Non-Fiction">
+  Non-Fiction
+</label>
+
+<label for="both">
+  <input type="checkbox" id="both" name="preference" value="Both">
+  Both
+</label>
+<h3>Genre Preference:</h3>
+          <label for="ad">
+            <input type="radio" id="ad" value="Adventure" name="genre">Adventure
+          </label>
+          <label for="com">
+            <input type="radio" id="com" value="Comedy" name="genre">Comedy
+          </label>
+          <label for="thril">
+            <input type="radio" id="thril" name="genre" value="Thriller">Thriller
+          </label>
+          <label for="news">
+            <input type="checkbox" id="news" name="newsletter" value="yes">Subscribe to newsletter
+          </label>
+          
+          <textarea name="msg" id="msg" rows="4" cols="50" placeholder="Your Message"></textarea>
+          <button type="submit">Send</button>
+
+        </form>
+
+    </section>
+
+   </main>
+   <footer>
+    <p>© 2025 MyMovieList</p>
+    <a href="#home">Back to Home</a>
+
+   </footer>
+</body>
+</html>

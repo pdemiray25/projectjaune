@@ -1,0 +1,195 @@
+h1{
+    color: blue;
+}
+.highlight{
+    background-color: yellow;
+    font-weight: bold;
+}
+#maintitle{
+    color: green;
+    font-size: 24px;
+}
+.italic-text{
+    font-style: italic;
+}
+.underlined{
+    text-decoration: underline;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.quote{
+    font-style: italic;
+    color: gray;
+    text-align: center;
+}
+.named-color{
+    color: blueviolet;
+}
+.hex-color{
+    color: #ff0075;
+}
+.rgb-color{
+    color: rgb(28, 33, 187);
+}
+.rgba-bg{
+    background-color: rgba(28, 33, 187, 0.3);
+}
+.bg-image{
+    background-image: url("images/painting1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+h2,p{
+    color: #ff0075;
+}
+div p{
+    color: greenyellow;
+}
+ul>li{
+    color: red;
+   text-decoration: underline;
+text-decoration-style: dashed;
+}
+h2+p{
+    color: white;
+    background-color: blueviolet;
+}
+.first{
+    
+    background-color: #ff0075;
+    padding: 20px;
+    margin: 15px;
+}
+.second{
+    padding: 20px;
+    background-color: antiquewhite;
+}
+.third{
+    border: 2px solid;
+    margin: 15px;
+    background-color: blueviolet;
+    padding: 25px;
+}
+.box {
+  width: auto;
+  height: auto;
+  background-color: lightblue;
+ 
+}
+* {
+  box-sizing: border-box;
+}
+.block-box{
+    display: block;
+    background-color: rgb(247, 29, 193);
+}
+.inline-box{
+    display: inline;
+    color: red;
+}
+.absolute-box{
+    position: absolute;
+    background-color: orange;
+}
+.relative-box{
+    position: relative;
+    background-color: rgb(32, 86, 223);
+}
+.box1 {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 0, 0, 0.6); /* yarı saydam kırmızı */
+  z-index: 1; /* altta */
+}
+
+.box2 {
+  position: absolute;
+  left: 120px;
+  top: 120px;
+  width: 250px;
+  height: 250px;
+  background: rgba(0, 0, 255, 0.6); /* yarı saydam mavi */
+  z-index: 2; /* üstte */
+}
+
+.scroll-box {
+  overflow: scroll;
+  background-color: rgb(197, 19, 146); /* arka plan yeşil oldu */
+  width: 300px;  /* biraz genişlik verelim */
+  height: 150px; /* yükseklik verelim ki scroll aktif olsun */
+  padding: 10px;
+}
+a{
+    color: #ff0075;
+    text-decoration: none;
+}
+a:hover{
+    color: chartreuse;
+}
+a:active{
+    color: blue;
+}
+.focusable:focus{
+    outline: 2px solid orange;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+}
+input:focus{
+    border: 2px solid orange;
+}
+.sbt{
+  background-color: blue;   /* button background */
+  color: white;             /* text color */
+  padding: 10px 20px;       /* vertical 10px, horizontal 20px */
+  border: none;             /* remove default border */
+  border-radius: 5px;       /* rounded corners */
+  cursor: pointer;          /* pointer on hover */
+}
+.rst{
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+fieldset{
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+input, select, textarea, button {
+  margin-bottom: 10px; /* space below each element */
+  display: block;       /* forces each element on a new line */
+}
+
+form {
+  max-width: 500px;       /* form won’t stretch too wide */
+  margin: 50px auto;      /* vertical 50px, horizontal auto = center */
+  padding: 20px;          /* space inside the form */
+  border: 1px solid #ccc; /* optional border */
+  border-radius: 10px;    /* rounded corners */
+  background-color: #f9f9f9; /* light background */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* subtle shadow */
+}
+.button-group {
+  display: flex;           /* side by side */
+  gap: 10px;               /* space between buttons */
+  justify-content: flex-start; /* align left, can use center/right */
+}
+.textual:hover{
+    box-shadow: 5px 0px 25px black;
+}

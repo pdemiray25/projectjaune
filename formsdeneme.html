@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormsDeneme</title>
+    <link rel="stylesheet" href="littlelemon.css">
+</head>
+<body>
+    <h1>FILL THE FORM PLEASE</h1>
+    <form action="#" method="post">
+        <label for="fullName">Your Full Name</label>
+        <input type="text" id="fullName" name="fullname">
+    <br> <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <br> <br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <br> <br>
+        <label name="newsletter" for="newsletter" >Subscribe to newsletter?
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+        </label>
+        <br> <br>
+        <label for="male">
+        <input type="radio" id="male" name="gender" value="male">Male</label>
+        <br> <br>
+        <label for="female"><input type="radio" id="female" name="gender" value="female">
+            female </label>
+        <br><br>
+
+        <label name="commnets" for="comments">Your Comments</label>
+        <textarea name="comments" id="comments" rows="4" cols="50"></textarea>
+        <br> <br>
+        <fieldset id="size">
+            <label for="size2">
+                <input type="radio" value="2" name="size" id="size2" > 2-person
+            </label>
+            <label for="size4">
+                <input type="radio" value="4" name="size" id="size4" checked> 4-person
+            </label>
+            <label for="size6">
+                <input type="radio" value="6" name="size" id="size6"> 6 person
+            </label>
+        </fieldset> <br>
+        <fieldset id="location">
+           <label for="in">
+             <input type="radio" value="indoors" name="location" id="in" checked> indoors
+           </label>
+           <label for="out">
+             <input type="radio" value="outdoors" name="location" id="out"> outdoors
+           </label>
+        </fieldset><br>
+        <h1>Booking Table</h1>
+        <div>
+            <label for="booking_date"> Booking Date
+                <input type="date" name="date" id="booking_date">
+            </label>
+        </div><br>
+        <div>
+            <label for="people"> Number of People
+                <input type="range" name="people" id="people" min="1" max="10" value="4" oninput="this.nextElementSibling.value=this.value">
+                <output>4</output>
+            </label>
+        </div><br>
+        <div>
+            <label for="booking_location">Location</label>
+            <input list="locations" name="booking_location" id="booking_location">
+            <datalist id="locations">
+                <option value="Hometown"></option>
+                <option value="Uptown"></option>
+            </datalist>
+        </div><br>
+              <div>
+                <label for="rating">Rating</label>
+                <input type="range" id="rating" name="rating" list="ratings" min="1" max="5" 
+                value="5" oninput="this.nextElementSibling.value=this.value">
+                <output>5</output>
+                <datalist id="ratings">
+                    <option value="1" label="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5" label="5"></option>
+                </datalist>
+            </div>
+            <br>
+        <input type="submit" id="submit" value="submit">
+        <input type="reset">
+        
+
+
+
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,261 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: rgba(241, 162, 241, 0.7);
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;          /* remove bullets */
+  display: flex;             /* make horizontal */
+  justify-content: center;   /* center items */
+  gap: 20px;                 /* space between */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0f8a8a;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: white;
+  background-color: #0f8a8a;
+  border-radius: 5px;
+}
+/* ===== LISTS ===== */
+ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+section ul li strong {
+  color: #d63384; /* make city names pinkish */
+}
+/* ===== SIDEBAR ===== */
+aside {
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+aside h3 {
+  color: #0f8a8a;
+  text-align: center;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside ul li {
+  text-align: center;
+  margin: 5px 0;
+}
+
+aside a {
+  text-decoration: none;
+  color: #d63384;
+  transition: 0.3s;
+}
+
+aside a:hover {
+  color: #0f8a8a;
+  text-decoration: underline;
+}
+/* ===== PROMO BOX ===== */
+.promo-box {
+  background-color: rgba(255, 228, 225, 0.7);
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 4px solid #d63384;
+  text-align: center;
+  border-radius: 8px;
+}
+/* ===== HERO IMAGE SECTION ===== */
+#hero-image {
+  background-image: url("images/holiday.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+/* ===== LAYOUT ===== */
+main {
+  display: flex;
+  flex-wrap: wrap; /* mobile friendly */
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+    max-width: 1200px;
+  margin: auto;
+}
+
+
+article, section {
+  flex: 2;
+  min-width: 300px;
+}
+
+aside {
+  flex: 1;
+  min-width: 250px;
+  position: sticky;
+  top: 100px;
+  z-index: 0; /* ekle */
+}
+
+/* Blog Section */
+main section:nth-of-type(3) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+main section:nth-of-type(3) article {
+  flex: 1 1 45%; /* responsive width */
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* ===== FORM GENERAL ===== */
+form {
+  max-width: 600px;           /* keeps form narrow */
+  margin: 40px auto;          /* centers it horizontally */
+  background-color: #f9f9f9;  /* light gray background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;                  /* space between fieldsets */
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== FIELDSETS ===== */
+fieldset {
+  border: 2px solid #0f8a8a;
+  border-radius: 8px;
+  padding: 15px 20px;
+}
+
+legend {
+  color: #0f8a8a;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+/* ===== LABELS & INPUTS ===== */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0f8a8a;
+  outline: none;
+}
+
+/* ===== CHECKBOX ===== */
+label[for="subscribe"] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+/* ===== BUTTON ===== */
+form button {
+  align-self: center;
+  background-color: #0f8a8a;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0c6f6f;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 4px;
+    background-color: #333;
+    color: white;
+    flex-wrap: wrap;
+}
+
+footer .footer-left,
+footer .footer-right {
+    flex: 1;
+}
+
+footer .footer-left {
+    text-align: left;
+}
+
+footer .footer-right {
+    text-align: right;
+}

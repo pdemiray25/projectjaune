@@ -1,0 +1,45 @@
+
+img {
+    max-width: 100%;   /* ekranı aşmasın */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;  /* ortala ve altına boşluk bırak */
+    border-radius: 10px;  /* köşeler yuvarlak */
+}
+h2{
+    color: blueviolet;
+}
+h1{
+    color: rgb(55, 226, 43);
+    text-decoration: rgb(7, 103, 103);
+}
+p{
+    color: brown;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif; /* okunabilir yazı tipi */
+    line-height: 1.6;                          /* satırlar arası boşluk */
+    max-width: 800px;                          /* içerik genişliği */
+    margin: 0 auto;                            /* sayfayı ortalar */
+    padding: 20px;                             /* kenarlardan iç boşluk */
+    background-color: #f9f9f9;                 /* açık gri arka plan */
+    color: #333;                               /* yazı rengi */
+}
+.pinkbox{
+   
+    background-color: rgb(227, 211, 190);
+  padding: 20px;
+  margin: 20px;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1) ;
+}
+table {
+  width: 100%;
+  border-collapse: collapse; /* kenar boşluklarını yok eder */
+}
+
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}

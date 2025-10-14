@@ -1,0 +1,54 @@
+h1{
+    color: blueviolet;
+}
+h2{
+    color: palevioletred;
+}
+#header{
+    color: yellowgreen;
+}
+h3{
+    color: rgb(17, 177, 67);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif; /* okunabilir yazı tipi */
+    line-height: 1.6;                          /* satırlar arası boşluk */
+    max-width: 800px;                          /* içerik genişliği */
+    margin: 0 auto;                            /* sayfayı ortalar */
+    padding: 20px;                             /* kenarlardan iç boşluk */
+    background-color: #f9f9f9;                 /* açık gri arka plan */
+    color: #333;                               /* yazı rengi */
+}
+nav {
+    background-color: #6284a6; /* koyu mavi arka plan */
+    padding: 15px 0;
+}
+
+/* Listeyi yatay yapmak ve default bullet kaldırmak */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* ortaya hizala */
+    margin: 0;
+    padding: 0;
+}
+
+/* Her bir liste elemanı */
+nav ul li {
+    margin: 0 20px; /* elemanlar arası boşluk */
+}
+
+/* Linkler */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Hover efekti */
+nav ul li a:hover {
+    color: #e74c3c; /* kırmızı ton */
+    text-decoration: underline;
+}

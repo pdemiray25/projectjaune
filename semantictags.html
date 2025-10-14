@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <style>
+        .textual:hover{
+            box-shadow: 5px 0px 25px black;
+        }
+        .flexi{
+            display: flex;
+        }
+        article{
+            flex: 1;
+        }
+        article:hover{
+            box-shadow: 5px 0px 25px rgb(185, 18, 18) ;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header class="homes">
+        <h1>My Travel Blog</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="myprofile.html" target="_blank">About Me</a>
+            </li>
+            <li>
+                <a href="#images">Photos</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Exploring France</h2>
+            <p class="textual">France is a beautiful country with rich culture and history.
+
+             <br> From Paris to Nice, every city has its unique charm.</p>
+        </section>
+        <section>
+        <h2>Best Travel Tips</h2>
+        <p>
+            Always check the weather before planning your trip.
+
+         <br>Learn a few basic phrases in the local language.
+        </p> 
+        <div id="images">
+           
+           <p> Packing smart can make your journey easier.</p>
+           <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Travel Bag">
+        </div>   
+        </section>
+        <aside>
+            <h3>Related Links</h3>
+            <ol>
+                <li>
+                    <a href="" target="_blank">Travel Blog</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">Photo Gallery</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">Travel Deals</a>
+                </li>
+            </ol>
+        </aside>
+        <audio controls>
+  <source src="images/song.mp3" type="audio/mpeg">
+  <source src="song.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio><br><br>
+<video width="400" controls poster="images/picture.png">
+  <source src="images/video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+    <track src="paris_captions.vtt" kind="captions" srclang="en" label="English captions">
+  <track src="paris_desc.vtt" kind="descriptions" srclang="en" label="Audio descriptions">
+   <track src="captions.vtt" kind="subtitles" srclang="en" label="English">
+  Your browser does not support the video tag.
+</video><br><br>
+<section class="flexi">
+    <article>
+        <h2>head1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci doloribus ullam nemo dolores, dignissimos possimus sapiente recusandae quas! Delectus ipsa dolorem laudantium consequatur odit ipsam ea laborum dicta saepe ex?</p>
+    </article>
+    <article>
+        <h2>head2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laborum esse perferendis culpa, dolor beatae iste maiores eaque eius repellendus et autem vitae itaque maxime facere ipsam, cupiditate atque magni?</p>
+    </article>
+    <article>
+        <h2>head3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consectetur fugit odio temporibus debitis similique at, natus, dolorem, hic maxime quaerat dolorum error quis commodi sapiente. Expedita voluptates alias eius.</p>
+    </article>
+
+</section>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Basic Info</legend>
+                <label for="fname">Full Name:</label>
+                <input type="text" id="fname" name="fullname" required><br><br>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="email" title="Password must be at least 6 characters" required><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}" required><br><br>
+                <label for="dofbirth">Date of Birth</label>
+                <input type="date" name="dateofbirth" id="dofbirth" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Account Info</legend>
+                <label for="uname">Username:</label>
+                <input type="text" id="uname" name="username" required minlength="3"><br><br>
+                <label for="pwd">Password:</label>
+                <input type="password" name="password" id="pwd" minlength="6" required><br><br>
+                <label for="cfrmpwd">Confirm Password</label>
+                <input type="password" name="confirmpassword" id="cfrmpwd" required>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="color">Favirite Color</label>
+                <input type="color" name="color" id="color" ><br><br>
+                <label for="link">Website</label>
+                <input type="url" name="website" id="link"><br><br>
+                <label for="srch">Search Keyword</label>
+                <input type="search" name="search" id="srch"><br><br>
+                <input type="checkbox" name="letter" id="letter" value="received">
+                <label for="letter">Receive Newsletter</label>
+            </fieldset>
+            <fieldset>
+                <legend>Upload</legend>
+                <label for="picture">Profile Picture</label>
+                <input type="file" name="profilepicture" id="picture"><br><br>
+                <label for="docs">Upload Documents</label>
+                <input type="file" id="docs" name="documents" multiple>
+            </fieldset>
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+
+    </main>
+    <footer>
+        <p>This is <span style="color:red">inline text</span> inside a block.</p>
+        <p>
+          © 2025 My Travel Blog. All rights reserved.  
+        </p>
+        <a href="#homes">Back to Home</a>
+        <p>&copy; 2025 My Website</p>
+<p>5 &lt; 10 and 10 &gt; 5</p>
+<p>Tom &amp; Jerry</p>
+<p>Space&nbsp;&nbsp;&nbsp;here</p>
+<button aria-label="Close Menu">X</button>
+    </footer>
+</body>
+</html>

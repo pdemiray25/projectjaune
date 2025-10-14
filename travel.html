@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dream Travel Page</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+   <h1>My Dream Travel Page</h1>
+   <p>Here I share my favorite travel destinations and why I love them.</p>
+   <h2>Top 3 Destinations</h2>
+   <ol>
+    <li>Paris</li>
+    <li>Tokyo</li>
+    <li>Istanbul</li>
+   </ol>
+<h3>Why I Love Paris</h3>
+<p>
+    Paris is <em>romantic</em> and <strong>beautiful</strong>.<br>
+    Tokyo is <em>big</em> and <strong>amazing.</strong><br>
+    Istanbul is <em>beautiful</em> and relaxing.
+</p>
+<h3>Here is My Travel Links</h3>
+<ul>
+    <li>
+        <a href="https://visitistanbulofficial.com/fr/" target="_blank" rel="noopener noreferrer">Visit Wikipedia</a>
+    </li>
+    <li>
+        <a href="https://www.lonelyplanet.fr/" target="_blank" rel="noopener noreferrer">Visit Lonely Planet</a>
+    </li>
+</ul>
+<h2>Travel Gallery</h2>
+<table class="gallery">
+    <tr>
+        <td>
+            <img src="images/paris.png" alt="Paris">
+
+        </td>
+        <td width="60"></td>
+        <td>
+            <img src="images/tokyo.png" alt="Tokyo">
+
+        </td>
+    </tr>
+</table>
+<h3>Travel Notes</h3>
+<table class="travel-notes">
+    <tr>
+    <th>Destination</th>
+    <th>Country</th>
+    <th>Fun Fact</th>
+    </tr>
+    <tr>
+        <td>Paris</td>
+        <td>France</td>
+        <td>Eiffel Tower</td>
+    </tr>
+    <tr>
+        <td>Tokyo</td>
+        <td>Japan</td>
+        <td>Suschi Culture</td>
+    </tr>
+    <tr>
+        <td>Istanbul</td>
+        <td>Turkey</td>
+        <td>Bosphorus Bridge</td>
+    </tr>
+</table>
+<h2>Book Your Trip</h2>
+<form action="/submit" method="post">
+    <label for="fullName">Full Name</label>
+    <input type="text" name="fullname" id="fullName">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" >
+    <label for="travelpreference">Travel Preference</label>
+    <select id="travelpreference"name="travelpreference">
+        <option name="Paris" value="Paris">Paris</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Istanbul">Istanbul</option>
+    </select>
+    <label for="newsletter">Subscribe to newsletter
+        <input type="checkbox" name="newsletter" value="yes" id="newsletter">
+    </label>
+    <label for="male">Male 
+        <input type="radio" id="male" name="gender" value="male">
+
+    </label>
+    <label for="female">Female
+       <input type="radio" id="female" name="gender" value="female">
+
+    </label>
+    <label for="comments">Comments</label>
+    <textarea name="comments" id="comments" rows="4" cols="50"></textarea>
+    <input type="submit" value="Submit">
+
+</form>
+</body>
+</html>

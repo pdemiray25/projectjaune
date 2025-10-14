@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+    <header>
+        
+        <img src="logo/Artboard 19.png" alt="logo">
+       
+
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#team">Team</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+       <section class="promo-box">
+                 <h2>Special Discount!</h2>
+                 <p>Book your coloring appointment this week and get 20% off on your next visit. 
+       Our stylists and colorists are ready to give you a bold and fresh look. 
+       Treat yourself and shine with our exclusive hair and beauty services.</p>
+                <a href="#appointment" class="book-now-btn">Book Now</a>
+                    </section>
+
+        <section class="home">
+            <article>
+                <h2>Stylish Cuts</h2>
+                <img src="logo/style.png" alt="Stylish_cuts">
+                <div class="content">
+                    <p>Our stylists create haircuts that perfectly match your personality. 
+                    Whether you want a classic look or a bold, modern style, we make it 
+                    happen. We pay attention to every detail to ensure your hair looks 
+                    amazing. Regular trims help maintain your style and keep your hair healthy. Visit us 
+                    and experience a haircut that makes you feel confident every day.</p>
+                </div>
+
+            </article>
+            <article>
+                <h2>Edgy Colors</h2>
+                <img src="logo/colors.png" alt="edgy_colors">
+               <div class="content">
+                 <p>We specialize in vibrant and creative hair colors that stand out. 
+                    From subtle highlights to bold neon shades, our colorists bring your 
+                    vision to life. Every coloring session is customized to your hair 
+                    type and personal style. We use high-quality products to keep your 
+                    hair healthy and shiny. 
+                    Express yourself with a color that truly represents you.</p>
+               </div>
+            </article>
+            <article>
+                <h2>Makeup & Nails</h2>
+                <img src="logo/makeup.png" alt="makeup">
+                <div class="content">
+                    <p>Enhance your beauty with our professional makeup sessions and 
+                    nail care. Whether it’s for a special event or a daily routine, 
+                    we create looks that suit you perfectly. 
+                    Our manicurist uses top-quality products to ensure long-lasting results. We also share tutorials online so you can try looks at home. 
+                    Feel pampered and confident from head to toe.</p>
+                </div>
+            </article>
+        </section>
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <p>At Hair Day, we offer a full range of services to make you look and 
+                feel your best. Our stylists provide haircuts and styling tailored 
+                to your personality. Our expert colorists specialize in edgy and creative hair coloring. We also offer professional makeup sessions and nail care to complete your look. Every service is designed 
+                to give you a relaxing and enjoyable experience.</p>
+
+        </section>
+        <section id="team" class="team">
+            <h2>Meet Our Team</h2>
+            <p>Our talented team is dedicated to making every visit special. 
+                Pria, the owner and lead colorist, creates bold and custom colors. 
+                Garry, co-founder and stylist, specializes in trendy cuts. 
+                We also have two stylists, three colorists, a manicurist, and a makeup artist to cover all your beauty needs. Each team member is passionate about their craft 
+                and ensuring you leave the salon feeling confident and beautiful.</p>
+
+        </section>
+        <section id="appointment">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="fullname" required>
+                    <label for="mail">Email Address</label>
+                    <input type="email" id="mail" name="email" required>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Appointment Details</legend>
+                    <label for="service">Preferred Service</label>
+                    <select name="services" id="service">
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="haircut">Haircut</option>
+                        <option value="coloring">Coloring</option>
+                        <option value="makeup">Makeup</option>
+                        <option value="nails">Nails</option>
+                    </select>
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="appointment-date" required>
+                    <label for="appointment-time">Preferred Time</label>
+                    <input type="time" id="appointment-time" name="appointment-time" required>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Notes</legend>
+                    <textarea name="notes" id="notes" placeholder="Additional Notes">Additional Notes</textarea>
+                </fieldset>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+    <div class="footer-left">
+        <img src="logo/Artboard 1.png" alt="logo">
+    </div>
+    <div class="footer-right">
+        <p>&copy; 2025 Hair Day. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

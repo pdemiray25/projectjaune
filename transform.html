@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transform & Transition Example</title>
+<style>
+  /* 1. Harfleri animasyonlu yapmak */
+  .letter {
+    display: inline-block;
+    font-size: 50px;
+    margin: 20px;
+    transition: transform 2s; /* dönüşün süresi */
+  }
+
+  .letter.a:hover {
+    transform: skewX(20deg); /* X ekseninde eğme */
+  }
+
+  .letter.b:hover {
+    transform: rotate(20deg); /* 20 derece döndürme */
+  }
+
+  /* 2. Kutuyu animasyonlu yapmak */
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    border: 5px solid green;
+    border-radius: 12px;
+    margin: 50px auto;
+    display: grid;
+    place-items: center;
+    transition: all 2s; /* tüm değişiklikleri animasyonla */
+  }
+
+  .box:hover {
+    transform: rotate(60deg); /* kutuyu döndürme */
+    background-color: lightcoral; /* arka plan rengini değiştir */
+    opacity: 0.5; /* saydamlık */
+  }
+</style>
+</head>
+<body>
+
+<h1>Harflere Hover Efekti</h1>
+<span class="letter a">A</span>
+<span class="letter b">B</span>
+
+<h1>Kutu Hover Efekti</h1>
+<div class="box">Hover Me!</div>
+
+</body>
+</html>

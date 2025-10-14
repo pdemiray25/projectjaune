@@ -1,0 +1,100 @@
+/* Genel body ve başlık stilleri */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraflar ve vurgu */
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+/* Linkler */
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+/* Travel Notes Table */
+.travel-notes {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.travel-notes th, .travel-notes td {
+    border: 1px solid #888;
+    padding: 8px;
+    text-align: left;
+}
+
+.travel-notes th {
+    background-color: #dcdcdc;
+}
+
+/* Travel Gallery Table */
+.gallery td {
+    border: none;          /* resim tablosuna border yok */
+    text-align: center;
+    padding: 5px;
+}
+
+/* Form Stilleri */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: darkmagenta;
+}

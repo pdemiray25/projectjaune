@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Recipes</title>
+    <link rel="stylesheet" href="myRecipes.css">
+</head>
+<body id="home">
+    <header>
+        <h1>My Favorite Recipes</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="categories">
+            <h2>Recipe Categories</h2>
+            <ul>
+                <li>Appetizers</li>
+                <li>Main Courses</li>
+                <li>Desserts</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Some Recipes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Recipe</th>
+                        <th>Chef</th>
+                        <th>Preparation Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spaghetti Carbonara </td>
+                        <td>John Doe </td>
+                        <td>30 mins</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Cake </td>
+                        <td>Mary Jane </td>
+                        <td>1 hr</td>
+                    </tr>
+                    <tr>
+                        <td>Caesar Salad </td>
+                        <td>Anna Smith </td>
+                        <td>20 mins</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                   <tr>
+                         <td colspan="3">WAIT FOR MORE...</td>
+                   </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <img src="images/cesar_salad.png" alt="caesar_salad">
+            <img src="images/chocklate_cake.png" alt="choclate_cake">
+            <img src="images/spagetthi.png" alt="spagetthi">
+        </section>
+        <section>
+            <h2>Useful Links</h2>
+                <ol>
+                    <li><a href="https://www.allrecipes.com/" target="_blank">All Recipies</a></li>
+                    <li><a href="https://foodnetwork.co.uk/recipes?utm_medium=domestic&utm_source=foodnetwork.com" target="_blank">Food Network</a></li>
+                    <li><a href="https://www.recipetineats.com/category/dessert-recipes/" target="_blank">Desert Recipes</a></li>
+                </ol>
+        </section>
+        <section id="contact">
+            <form action="#" method="post">
+                <fieldset>
+                     <legend>Choose Your Meal Type</legend>
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="fullName" id="name" placeholder="Full Name">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" pattern="example@gmail.com">
+                    <label for="recipe">Favorite Recipe</label>
+                    <input type="text" name="favoriteRecipe" id="recipe">
+                    <label for="meal1">
+                        <input type="radio" name="mealType" id="meal1" value="Appetizer">Appetizer
+                    </label>
+                    <label for="meal2">
+                         <input type="radio" name="mealType" id="meal2" value="Main Course ">Main Course 
+                    </label>
+                    <label for="meal3">
+                         <input type="radio" name="mealType" id="meal3" value="Desserts">Desserts
+                    </label>
+                    <label for="letter"><input type="checkbox" name="newsletter" id="letter" value="yes">Subscribe to newsletter </label>
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="message" rows="4" cols="35"></textarea>
+                </fieldset>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 My Favorite Recipes</p>
+        <a href="#home">Back to Home</a>
+
+    </footer>
+</body>
+</html>

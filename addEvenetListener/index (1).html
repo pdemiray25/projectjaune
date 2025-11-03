@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleee.css" />
+    <title>addEventListener</title>
+  </head>
+  <body>
+    <h1 class="container-fluid mt-3 p-4 background">
+      Revision addEventListener
+    </h1>
+    <form id="myForm">
+      <div class="groupe-from">
+        <label class="form-label" for="firstname">Entrez votre prénom : </label>
+        <input
+          class="form-control"
+          type="text"
+          name="firstname"
+          id="firstname"
+        />
+      </div>
+      <div class="groupe-from">
+        <label class="form-label" for="name">Entrez votre nom : </label>
+        <input class="form-control" type="text" name="name" id="name" />
+      </div>
+
+      <div class="groupe-from">
+        <label class="form-label" for="birthdate"
+          >Entrez votre date de naissance :
+        </label>
+        <input
+          class="form-control"
+          type="date"
+          name="brithdate"
+          id="birthdate"
+        />
+      </div>
+      <div class="groupe-from">
+        <button type="submit" id="submitBtn" class="btn">Envoyer !</button>
+      </div>
+    </form>
+
+    <!-- button restore  -->
+    <button type="button" id="resetBtn" class="btn">Réinitialiser</button>
+
+    <!-- Modale de confirmation -->
+    <div id="modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <p id="modalMessage"></p>
+      </div>
+    </div>
+
+    <script src="jszarga.js"></script>
+  </body>
+</html>

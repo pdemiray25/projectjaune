@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo des Oubliées</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <img src="images/logo.png" alt="logo">
+          <!-- HAMBURGER BUTTON -->
+    <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="episodes.html">Épisodes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </nav>
+    <main>
+        <section class="contact-section">
+  <h1>Partager Mon Histoire</h1>
+  <p class="contact-intro">
+  Votre voix compte. Votre histoire pourrait inspirer d'autres femmes confrontées à des défis similaires.
+Nous serions honorés de vous entendre et potentiellement de partager votre parcours dans notre  podcast.
+  </p>
+
+  <form class="contact-form">
+
+    <label for="name">Votre Nom</label>
+    <input type="text" id="name" placeholder="Comment devons-nous vous appeler ?" required>
+
+    <label for="country">Pays</label>
+    <input type="text" id="country" placeholder="D'où nous écrivez-vous ?" required>
+
+    <label for="email">Adresse Email</label>
+    <input type="email" id="email" placeholder="votre.email@exemple.com" required>
+
+    <label for="story">Votre Histoire</label>
+    <textarea id="story" rows="7" placeholder="Racontez-nous votre histoire ..." required></textarea>
+  
+    <div class="privacy-policy">
+  <input type="checkbox" id="privacy" required>
+   <label for="privacy">
+    J’accepte la <a href="#" id="privacy-link">Politique de confidentialité</a> et le traitement de mes données personnelles.
+   </label>  
+   </div>
+<!-- Modal -->
+<div id="privacy-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Politique de confidentialité </h2>
+    <p>Écho des Oubliées – Politique de confidentialité
+1. Responsable du traitement
+Le responsable du traitement de vos données personnelles est :
+Association Écho des Oubliées
+Adresse …
+E-mail : …
+2. Données collectées
+Lors de l’utilisation de notre formulaire de contact ou de témoignage, nous collectons :
+* Nom
+* E-mail
+* Pays
+* Texte du message ou témoignage
+Ces données sont collectées uniquement pour répondre aux messages et, éventuellement, publier les témoignages.
+3. Finalités du traitement
+* Réception et lecture des témoignages.
+* Publication éventuelle sur le site (avec consentement explicite).
+* Réponse aux messages via le formulaire de contact
+4. Base légale
+* Témoignages : consentement explicite (art. 6 et 9 RGPD).
+* Formulaire de contact : intérêt légitime / consentement.
+5. Durée de conservation
+Les données sont conservées jusqu’à ce que la finalité soit atteinte ou retrait du consentement.
+Vous pouvez demander la suppression de vos données à tout moment : /email
+6. Sécurité
+* Accès limité aux administrateurs
+* Stockage sécurisé sur serveur HTTPS
+* Aucune transmission à des tiers
+7. Vos droits
+* Accès, rectification, suppression, retrait du consentement, portabilité
+* Possibilité de porter plainte auprès de la CNIL : https://www.cnil.fr
+* Contact pour exercer vos droits : /email
+8. Publication de témoignages
+* Publication possible anonymement ou avec prénom selon choix de l’auteur
+* Pas de publication d’e-mails ou coordonnées
+9. Mise à jour
+Cette politique peut être mise à jour ponctuellement. La version la plus récente est toujours disponible sur cette page.</p>
+  </div>
+</div>
+
+    <button type="submit" class="btn-submit">Envoyer Mon Histoire</button>
+  </form>
+
+  <p class="confidentialite">
+    Nous traitons chaque histoire avec soin et confidentialité.  
+    Nous vous contacterons pour discuter des prochaines étapes.
+  </p>
+</section>
+       </main>
+   <footer class="footer">
+  <div class="footer-top">
+
+<div class="footer-brand">
+  <img src="images/wave.png" alt="logo" class="footer-logo">
+
+  <div class="footer-brand-text">
+    <h2>Écho des Oubliées</h2>
+    <p>Amplifier les voix des femmes, une histoire à la fois.</p>
+  </div>
+</div>
+
+    <div class="footer-links">
+      <h3>Liens rapides</h3>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À Propos</a></li>
+        <li><a href="episodes.html">Épisodes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-info">
+      <h3>Informations</h3>
+      <ul>
+        <li><a href="#">Conditions d'utilisation</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+  <h3>Suivez-nous</h3>
+  <div class="social-icons">
+    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+    <a href="#"><img src="images/spotify.png" alt="Spotify"></a>
+  </div>
+</div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Écho des Oubliées — Tous droits réservés.
+  </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

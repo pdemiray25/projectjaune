@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nos podcasts — Echo des Oubliées</title>
+  <link rel="stylesheet" href="episodes.css">
+</head>
+<body>
+  <!-- Navbar (réutilise ta navbar existante) -->
+    <nav class="navbar">
+        <img src="images/logo.png" alt="logo">
+          <!-- HAMBURGER BUTTON -->
+    <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="episodes.html">Épisodes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </nav>
+  <header class="pod-hero">
+    <h1>Podcasts à découvrir</h1>
+    <p>Plongez dans des conversations puissantes qui inspirent, guérissent et nous
+connectent toutes.</p>
+  </header>
+<main>
+<!-- Catégories -->
+<section class="pod-categories">
+  <div class="cat-row">
+
+    <article class="cat-pod">
+      <div class="play-icon" data-audio="audios/audio1.m4a">▶</div>
+      <div class="pod-text">
+        <h4>VIOLENCE ET RECONSTRUCTION</h4>
+        <p class="pod-title">L'excision, ça vous parle ?</p>
+        <p class="pod-desc">Briser le silence autour de cette violence 
+            subie dans l’enfance, explorer les conséquences physiques et psychologiques, parler reconstruction et dignité.</p>
+        <div class="pod-info">
+          <span class="duration">42 min</span>
+          <span class="speaker">Natalia</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="cat-pod">
+      <div class="play-icon" data-audio="audios/audio2.m4a">▶</div>
+      <div class="pod-text">
+        <h4>RELATION ET CULTURE</h4>
+        <p class="pod-title"> La polygamie et le divorce, ça vous parle ?</p>
+        <p class="pod-desc">
+            Réflexion sur les mariages multiples, les femmes invisibles,
+             les séparations stigmatisées, et les effets sur les enfants.
+        </p>
+        <div class="pod-info">
+          <span class="duration">38 min</span>
+          <span class="speaker">Julien</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="cat-pod">
+      <div class="play-icon" data-audio="audios/audio3.m4a">▶</div>
+      <div class="pod-text">
+        <h4>VIOLENCE ET RECONSTRUCTION</h4>
+        <p class="pod-title">Le mariage forcé, ça vous parle ?</p>
+        <p class="pod-desc"> Quand le consentement est nié. Témoignages, droit, pressions familiales et résistances.</p>
+        <div class="pod-info">
+          <span class="duration">30 min</span>
+          <span class="speaker">Sofia</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="cat-row">
+
+    <article class="cat-pod">
+      <div class="play-icon" data-audio="audios/audio1.m4a">▶</div>
+      <div class="pod-text">
+        <h4>VIOLENCE ET RECONSTRUCTION</h4>
+        <p class="pod-title">Pression psychologique et sociale, ça vous parle ?</p>
+        <p class="pod-desc">Être une femme “comme il faut” : ce que la société nous impose, ce que ça détruit,
+            et comment on s’en libère.</p>
+        <div class="pod-info">
+          <span class="duration">42 min</span>
+          <span class="speaker">Natalia</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="cat-pod">
+      <div class="play-icon" data-audio="audios/audio2.m4a">▶</div>
+      <div class="pod-text">
+        <h4>VIOLENCE ET RECONSTRUCTION</h4>
+        <p class="pod-title">L’inceste, et si on en parlait enfin ?</p>
+        <p class="pod-desc">Sujet tabou parmi les tabous. Rompre l’omerta pour protéger, réparer, prévenir.</p>
+        <div class="pod-info">
+          <span class="duration">38 min</span>
+          <span class="speaker">Julien</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="cat-pod">
+      <div class="play-icon" data-audio="audios/audio3.m4a">▶</div>
+      <div class="pod-text">
+        <h4>RELATION ET CULTURE</h4>
+        <p class="pod-title">La polygamie et le divorce (Partie 2)</p>
+        <p class="pod-desc">Approfondir le débat : regards croisés entre générations, impacts juridiques et religieux.</p>
+        <div class="pod-info">
+          <span class="duration">30 min</span>
+          <span class="speaker">Sofia</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+<div class="episode-actions">
+    <button class="btn-left">Voir tous les épisodes</button>
+
+    <div class="search-wrapper">
+      <span class="search-icon">🔎</span>
+      <input type="text" class="search-input" placeholder="Rechercher un épisode">
+    </div>
+</div>
+<section class="categories">
+    <h2>Quelle thématique de Podcasts vous inspire ?</h2>
+    <p>Trouvez facilement des épisodes selon vos centres d’intérêt.</p>
+    <div class="category-cards">
+        <div class="category-card"><a href="#Santé">Santé</a></div>
+        <div class="category-card"><a href="#Société">Société</a></div>
+        <div class="category-card"><a href="#Éducation">Éducation</a></div>
+        <div class="category-card"><a href="#">Culture</a></div>
+    </div>
+</section>
+
+<!-- Audio player global -->
+<div id="audio-player" style="margin: 40px auto; text-align:center;">
+  <audio id="player" controls>
+    <source src="" type="audio/mp4">
+    Votre navigateur ne supporte pas la lecture audio.
+  </audio>
+</div>
+
+  <!-- Texte explicatif -->
+<section class="pod-note">
+  <blockquote>
+    « Chaque voix compte, chaque histoire mérite d'être entendue. » : nous avons créé cet espace pour partager des podcasts qui inspirent, informent et rapprochent les auditeurs.
+  </blockquote>
+  <p>
+    Pour vous aider à découvrir facilement nos contenus, nous avons regroupé nos podcasts en différentes catégories : Société, Santé, Inspiration, Éducation. Vous trouverez toujours les derniers épisodes en haut de chaque section.
+  </p>
+  <p>
+    Installez-vous confortablement, écoutez, apprenez, et laissez-vous emporter par des histoires vraies et inspirantes. Bonne écoute et bienvenue dans notre univers 💜 !
+  </p>
+</section>
+        </main>
+          <!-- Footer -->
+   <footer class="footer">
+  <div class="footer-top">
+
+<div class="footer-brand">
+  <img src="images/wave.png" alt="logo" class="footer-logo">
+
+  <div class="footer-brand-text">
+    <h2>Écho des Oubliées</h2>
+    <p>Amplifier les voix des femmes, une histoire à la fois.</p>
+  </div>
+</div>
+
+    <div class="footer-links">
+      <h3>Liens rapides</h3>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À Propos</a></li>
+        <li><a href="episodes.html">Épisodes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-info">
+      <h3>Informations</h3>
+      <ul>
+        <li><a href="#">Conditions d'utilisation</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+  <h3>Suivez-nous</h3>
+  <div class="social-icons">
+    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+    <a href="#"><img src="images/spotify.png" alt="Spotify"></a>
+  </div>
+</div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Écho des Oubliées — Tous droits réservés.
+  </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+ <!-- Grid des 4 podcasts principaux 
+<section class="pod-main-grid">
+
+  <article class="pod-card">
+    <img src="images/home1.jpg" alt="Cover Sacrés Accouchements">
+    <button class="play-btn" data-audio="audios/audio1.m4a">Sacrés Accouchements <span class="icon">▶</span></button>
+    <p class="pod-meta">Nouvelle émission • Thèmes : Les Accouchements</p>
+  </article>
+
+  <article class="pod-card">
+    <img src="images/home2.jpg" alt="Cover Podcast 2">
+    <button class="play-btn" data-audio="audios/audio2.m4a">Voix & Résilience <span class="icon">▶</span></button>
+    <p class="pod-meta">Récits de vie • Santé mentale</p>
+  </article>
+
+  <article class="pod-card">
+    <img src="images/home4.jpg" alt="Cover Podcast 4">
+    <button class="play-btn" data-audio="audios/audio1.m4a">Paroles de Parents <span class="icon">▶</span></button>
+    <p class="pod-meta">Parenting • Inspiration</p>
+  </article>
+</section>
+ <h2>Catégories de podcasts gratuits</h2> <h3 class="cat-title">Santé</h3> -->

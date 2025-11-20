@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nos podcasts — Echo des Oubliées</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar (réutilise ta navbar existante) -->
+  <nav class="navbar">
+    <img src="images/logo.png" alt="Echo des Oubliées" class="logo">
+    <button class="menu-toggle">☰</button>
+    <ul class="nav-links">
+      <li><a href="accueil.html">Accueil</a></li>
+      <li><a href="podcasts.html">Podcasts</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="pod-hero">
+    <h1>Podcasts à découvrir</h1>
+    <p>Retrouvez nos émissions, écoutez et abonnez-vous aux séries qui vous touchent.</p>
+  </header>
+
+  <!-- Grid des 4 podcasts principaux -->
+<section class="pod-main-grid">
+  <article class="pod-card">
+    <img src="images/home1.jpg" alt="Cover Sacrés Accouchements">
+    <button class="play-btn" data-audio="audios/audio1.m4a">Sacrés Accouchements <span class="icon">▶</span></button>
+    <p class="pod-meta">Nouvelle émission • Thèmes : Les Accouchements</p>
+  </article>
+
+  <article class="pod-card">
+    <img src="images/home2.jpg" alt="Cover Podcast 2">
+    <button class="play-btn" data-audio="audios/audio2.m4a">Voix & Résilience <span class="icon">▶</span></button>
+    <p class="pod-meta">Récits de vie • Santé mentale</p>
+  </article>
+
+  <article class="pod-card">
+    <img src="images/home3.jpg" alt="Cover Podcast 3">
+    <button class="play-btn" data-audio="audios/audio1.m4a">Histoires d'Exil <span class="icon">▶</span></button>
+    <p class="pod-meta">Témoignages • Société</p>
+  </article>
+
+  <article class="pod-card">
+    <img src="images/home4.jpg" alt="Cover Podcast 4">
+    <button class="play-btn" data-audio="audios/audio1.m4a">Paroles de Parents <span class="icon">▶</span></button>
+    <p class="pod-meta">Parenting • Inspiration</p>
+  </article>
+</section>
+
+<!-- Catégories -->
+<section class="pod-categories">
+  <h2>Catégories de podcasts gratuits</h2>
+
+  <!-- Santé -->
+  <h3 class="cat-title" >Santé</h3>
+  <div class="cat-row" id="sante">
+    <article class="cat-pod">
+      <img src="images/bien etre.jpg" alt="">
+      <button class="play-btn" data-audio="audios/audio1.m4a">Bien-vivre après <span class="icon">▶</span></button>
+    </article>
+    <article class="cat-pod">
+      <img src="images/mental.jpg" alt="">
+      <button class="play-btn" data-audio="audios/audio1.m4a">Santé mentale aujourd'hui <span class="icon">▶</span></button>
+    </article>
+    <article class="cat-pod">
+      <img src="images/mere.jpg" alt="">
+      <button class="play-btn" data-audio="audios/audio1.m4a">Mères et soins <span class="icon">▶</span></button>
+    </article>
+    <article class="cat-pod">
+      <img src="images/nuitrition.jpg" alt="">
+      <button class="play-btn" data-audio="audios/audio1.m4a">Nutrition & récits <span class="icon">▶</span></button>
+    </article>
+  </div>
+
+  <!-- Société -->
+  <h3 class="cat-title">Société</h3>
+  <div class="cat-row" id="societe">
+    <article class="cat-pod">
+      <img src="images/vie partage.jpg" alt="">
+      <button class="play-btn" data-audio="audios/audio1.m4a">Vies partagées <span class="icon">▶</span></button>
+    </article>
+    <article class="cat-pod">
+      <img src="images/invisible.jpg" alt="">
+      <button class="play-btn" data-audio="audios/audio1.m4a">Les invisibles <span class="icon">▶</span></button>
+    </article>
+    <article class="cat-pod">
+      <img src="images/echo.jpg" alt="">
+      <button class="play-btn" data-audio="audios/audio1.m4a">Échos & luttes <span class="icon">▶</span></button>
+    </article>
+    <article class="cat-pod">
+      <img src="images/urbain.jpg" alt="">
+      <button class="play-btn" data-audio="audios/audio1.m4a">Urbanités <span class="icon">▶</span></button>
+    </article>
+  </div>
+
+  <!-- Éducation -->
+  <h3 class="cat-title" id="education">Éducation</h3>
+  <div class="cat-row">
+    <article class="cat-pod">
+      <img src="images/hero.jpg" alt="">
+      <button class="play-btn" data-audio="audio/heroine_quotidien.mp3">Les Héroïnes du Quotidien <span class="icon">▶</span></button>
+    </article>
+    <article class="cat-pod">
+      <img src="images/feminin.jpg" alt="">
+      <button class="play-btn" data-audio="audio/savoirs_feminin.mp3">Savoirs au Féminin <span class="icon">▶</span></button>
+    </article>
+    <article class="cat-pod">
+      <img src="images/education.jpg" alt="">
+      <button class="play-btn" data-audio="audio/education_inspirante.mp3">Éducation Inspirante <span class="icon">▶</span></button>
+    </article>
+    <article class="cat-pod">
+      <img src="images/tomorrow.jpg" alt="">
+      <button class="play-btn" data-audio="audio/voix_demain.mp3">Voix de Demain <span class="icon">▶</span></button>
+    </article>
+  </div>
+</section>
+
+<!-- Audio player global -->
+<div id="audio-player" style="margin: 40px auto; text-align:center;">
+  <audio id="player" controls>
+    <source src="" type="audio/mp4">
+    Votre navigateur ne supporte pas la lecture audio.
+  </audio>
+</div>
+  </section>
+
+  <!-- Texte explicatif -->
+<section class="pod-note">
+  <blockquote>
+    « Chaque voix compte, chaque histoire mérite d'être entendue. » : nous avons créé cet espace pour partager des podcasts qui inspirent, informent et rapprochent les auditeurs.
+  </blockquote>
+  <p>
+    Pour vous aider à découvrir facilement nos contenus, nous avons regroupé nos podcasts en différentes catégories : Société, Santé, Inspiration, Éducation. Vous trouverez toujours les derniers épisodes en haut de chaque section.
+  </p>
+  <p>
+    Installez-vous confortablement, écoutez, apprenez, et laissez-vous emporter par des histoires vraies et inspirantes. Bonne écoute et bienvenue dans notre univers 💜 !
+  </p>
+</section>
+
+
+  <!-- Footer -->
+    <footer>
+        <img src="images/logo.png" alt="logo">
+        <p>© 2025 Echo des Oubliées</p>
+    </footer>
+
+  <script src="accueil.js">
+  </script>
+</body>
+</html>

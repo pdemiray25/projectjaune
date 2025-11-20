@@ -46,19 +46,24 @@ player.addEventListener('pause', () => {
   }
 });
 
-const modal = document.getElementById("privacy-modal");
-const link = document.getElementById("privacy-link");
-const closeBtn = modal.querySelector(".close"); // modal içinden seçmek daha güvenli
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("privacy-modal");
+  const link = document.getElementById("privacy-link");
+  const closeBtn = modal.querySelector(".close");
 
-link.onclick = e => {
-  e.preventDefault();
-  modal.classList.add("show");
-};
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    modal.classList.add("show");
+  });
 
-closeBtn.onclick = () => modal.classList.remove("show");
+  closeBtn.addEventListener("click", () => {
+    modal.classList.remove("show");
+  });
 
-window.onclick = e => {
-  if(e.target === modal) modal.classList.remove("show");
-};
+  window.addEventListener("click", e => {
+    if (e.target === modal) modal.classList.remove("show");
+  });
+});
+
 
 

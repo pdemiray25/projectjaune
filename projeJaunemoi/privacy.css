@@ -1,0 +1,114 @@
+/* Genel Ayarlar */
+body {
+font-family: 'Helvetica', Arial, sans-serif;
+background-color: #f7f7f7;
+margin: 0;
+padding: 0;
+color: #333;
+line-height: 1.6;
+}
+
+/* Header */
+header {
+background-color: #FFC300;
+padding: 40px 20px;
+text-align: center;
+}
+
+header h1 {
+margin: 0;
+font-size: 2rem;
+color: #1a1a1a;
+letter-spacing: 1px;
+}
+
+/* Main Alan */
+main {
+max-width: 900px;
+margin: 40px auto;
+padding: 30px 25px;
+background-color: #fff;
+border-radius: 12px;
+box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Başlıklar */
+main h2 {
+font-size: 1.5rem;
+color: #222;
+margin-top: 30px;
+margin-bottom: 15px;
+border-left: 5px solid #FFC300;
+padding-left: 10px;
+}
+
+/* Paragraflar */
+main p {
+font-size: 1rem;
+margin-bottom: 15px;
+}
+
+/* Listeler */
+main ul {
+margin-left: 20px;
+margin-bottom: 20px;
+}
+
+main ul li {
+margin-bottom: 8px;
+position: relative;
+padding-left: 12px;
+}
+
+main ul li::before {
+
+position: absolute;
+left: 0;
+
+}
+
+/* Geri Dön Butonları */
+.btn-back {
+display: inline-block;
+margin: 25px 10px 0 0;
+padding: 12px 25px;
+background-color: #FFC300;
+color: #1a1a1a;
+font-weight: bold;
+text-decoration: none;
+border-radius: 8px;
+transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+background-color: #e6b000;
+transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+text-align: center;
+padding: 20px 10px;
+font-size: 0.9rem;
+color: #777;
+margin-top: 40px;
+background-color: #fff;
+box-shadow: 0 -4px 15px rgba(0,0,0,0.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+main {
+padding: 20px 15px;
+}
+header h1 {
+font-size: 1.6rem;
+}
+main h2 {
+font-size: 1.3rem;
+}
+.btn-back {
+width: 100%;
+text-align: center;
+}
+}

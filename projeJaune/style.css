@@ -1,0 +1,629 @@
+/* GENEL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+/* NAVBAR */
+/* Navbar başlangıç */
+.navbar {
+  position: sticky;      /* sabit üstte */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 4%;
+  z-index: 1000;
+  background-color: #ffffff; /* başlangıç siyah */
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+/* Transparent scroll */
+.navbar.scrolled {
+  background-color: rgba(0,0,0,0); /* transparent */
+}
+
+
+/* LOGO */
+.navbar img {
+  height: 85px;
+}
+
+/* NAV LINKS */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #c7120b;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.3s ease;
+  font-size: large;
+}
+
+.navbar a:hover {
+  color: #f9c400; /* logo sarısı */
+}
+
+
+/* MOBIL (hamburger ekleyeceğiz ileride) */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+}
+.menu-toggle {
+    display: none; /* Masaüstünde gizle */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobil için */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Başlangıçta gizle */
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .menu-toggle {
+        display: block; /* Hamburger görünür */
+    }
+    .nav-links.active {
+        display: flex; /* Butona basınca açılacak */
+    }
+}
+/* BANNER */
+.banner {
+  background-image: url("images/bannernew.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 550px; /* tüm ekran */
+  position: relative;
+  display: flex;
+  justify-content: flex-end; /* sağa hizala */
+  align-items: flex-start; /* yukarı hizala */
+  padding: 40px;
+  margin-top: 0px; /* navbar için boşluk */
+}
+
+/* SEARCH CONTAINER */
+.search-container {
+  display: flex;
+  background-color: rgba(150, 147, 147, 0.9);
+  border-radius: 25px;
+  overflow: hidden;
+  height: 40px;
+   transform: translateX(-170px);
+}
+
+.search-container input {
+  border: none;
+  padding: 0 15px;
+  font-size: 1rem;
+  outline: none;
+  background-color: rgba(224, 222, 222, 0.9);
+  
+}
+
+.search-container button {
+  background-color: #f9c400; /* logo sarısı */
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.search-container button:hover {
+  background-color: #ffd84d;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 65px;
+  padding: 50px 10%;
+  background-color: #f9f6fb;
+  line-height: 1.8;
+}
+
+.intro-left, .intro-right {
+  flex: 1;
+}
+
+.intro-left h1 {
+  color: #0f0f0d;
+  font-size: 2em;
+}
+
+.intro-right h2 {
+  color: #0f0f0d;
+  font-size: xx-large;
+}
+
+.intro p {
+  line-height: 1.6;
+  color: #444;
+  font-size: larger;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.btn {
+  display: inline-block;
+  background-color: #f9c400;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #8f7104;
+}
+
+/* Recent Podcasts */
+.recent-podcasts {
+  text-align: center;
+  padding: 60px 10%;
+  background-color: #f9f6fb;
+  font-size: large;
+}
+
+.recent-podcasts h2 {
+  font-size: 3em;
+  color: #453548;
+  margin-bottom: 10px;
+}
+
+.recent-podcasts p {
+  color: #282222;
+  margin-bottom: 40px;
+  font-size: larger;
+}
+
+.podcast-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.podcast-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.podcast-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.podcast-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.podcast-card a {
+  display: block;
+  text-decoration: none;
+  color: #5a3e60;
+  font-weight: bold;
+  padding: 15px 10px 5px 10px;
+  font-size: 2em;
+}
+.podcast-card a:hover{
+  text-decoration: underline;
+}
+
+.podcast-card button {
+  background-color: #7a4c86;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 16px;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.podcast-card button:hover {
+  background-color: #5e3a68;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 40px;
+  background-color: #f9c400;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ba9304;
+}
+
+@media (max-width: 768px) {
+  .podcast-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Categories */
+.categories {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #fafafa;
+    line-height: 1.6;
+    font-size: 2em;
+}
+
+.category-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.category-card a {
+    background-color: #5e3a68;
+    color: rgb(248, 242, 242);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.category-card a:hover{
+  text-decoration: underline;
+   background-color: #754184;
+}
+/* Newsletter */
+.newsletter {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f9f6fb;
+    font-size: large;
+}
+
+.newsletter form {
+    margin-top: 1.5rem;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.7rem;
+    width: 250px;
+    border: 1px solid #a9a5a5;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+
+.newsletter button {
+    padding: 0.7rem 1.2rem;
+    background-color: #f9c400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.newsletter button:hover {
+  background-color: #ba9304;
+}
+
+footer {
+  background-color: #111;           /* fond sombre */
+  color: #ffffff;                   /* texte clair */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   /* espace entre logo et texte */
+  padding: 10px 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer img {
+  width: 50px;                      /* logo plus petit */
+  height: auto;
+}
+
+footer p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Responsive pour mobile */
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr; /* tablet: 2 kolon */
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-top {
+    grid-template-columns: 1fr; /* mobil: tek kolon */
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-brand {
+    justify-content: center; /* logo + yazı ortala */
+  }
+  .social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  .footer-social {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* ORTALAR */
+    justify-content: center;
+  }
+
+  .social-icons {
+    display: flex;          /* ikonları yan yana dizer */
+    justify-content: center; /* ORTALAR */
+    align-items: center;
+    gap: 15px;               /* ikonlar arası boşluk */
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    display: flex;
+  }
+}
+/* --- podcasts list --- */
+
+.pod-main-grid { display:flex; gap:24px; justify-content:center; padding: 2rem 4%; flex-wrap:wrap; }
+.pod-card { width:250px; background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,0.08); text-align:left; transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pod-card img { width:100%; height:160px; object-fit:cover; display:block; }
+.pod-card h3 { padding:12px; font-size:1.1rem; margin:0; }
+.pod-card h3 a { color:#4a2b4b; text-decoration:none; }
+.pod-meta { padding: 0 12px 16px 12px; color:#666; font-size:0.95rem; }
+/* --- hero kısmı (üst başlık ve açıklama) --- */
+.pod-hero {
+  text-align: center;
+  padding: 100px 20px 60px; /* üstten mesafe eklendi */
+  background: #f7f7fb;
+}
+.pod-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.pod-card a:hover{
+  text-decoration: underline;
+}
+.pod-hero h1 {
+  font-size: 3rem; /* başlık büyüdü */
+  color: #2b1b2c;
+  margin-bottom: 15px;
+}
+
+.pod-hero p {
+  font-size: 2rem; 
+  color: #4d4b4b;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+/* categories */
+.pod-categories {
+  padding: 60px 4%; /* biraz üst ve alt boşluk artırdım */
+  background: #fff;
+}
+.pod-categories h2 {
+  font-size:xx-large;
+   margin-bottom: 40px;
+   text-align: center;
+}
+
+.categories-list {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 30px; /* üstten biraz daha boşluk */
+  flex-wrap: wrap;
+}
+
+.cat-btn {
+  background: #00bcd4;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cat-btn:hover {
+  background: #ddb215;
+}
+
+.cat-row {
+  display: flex;
+  gap: 45px; /* kartlar arası boşluk artırıldı */
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 40px; /* kategori başlığı ile alt kartlar arası boşluk artırıldı */
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.cat-pod {
+  width: 220px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cat-pod img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cat-pod a {
+  display: block;
+  margin-top: 8px;
+  color: #181711;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cat-pod a:hover {
+  text-decoration: underline;
+  color: #715902;
+}
+
+.cat-pod:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.pod-note {
+  background: #f4eef8; /* hafif mor ton, sayfadan ayrılıyor */
+  padding: 50px 20px;
+  border-radius: 15px;
+  max-width: 1000px;
+  margin: 50px auto; /* sayfa ortasında */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.pod-note blockquote {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5a3e60;
+  margin-bottom: 25px;
+  position: relative;
+  padding: 20px 30px;
+  quotes: "“" "”";
+}
+
+.pod-note blockquote::before {
+  content: open-quote;
+  font-size: 2rem;
+  color: #a06da0;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+.pod-note blockquote::after {
+  content: close-quote;
+}
+
+.pod-note p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4a2b4b;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 768px) {
+  .pod-note {
+    padding: 30px 15px;
+  }
+
+  .pod-note blockquote {
+    font-size: 1.3rem;
+    padding: 15px 20px;
+  }
+
+  .pod-note p {
+    font-size: 1rem;
+  }
+}
+/* Genel stil */
+.play-btn {
+  display: inline-block;
+  background-color: #f9c400; /* Turkuaz ton, göze hoş */
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+/* Hover efekti */
+.play-btn:hover {
+  background-color: #bc9404; /* Daha koyu turkuaz */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Odaklanma efekti */
+.play-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.4);
+}
+
+
+
+/* pod detail */
+.pod-detail { display:flex; gap:30px; padding: 30px 5%; align-items:flex-start; flex-wrap:wrap; background:#faf7fb; }
+.pod-left { flex: 0 0 360px; }
+.detail-cover { width:100%; border-radius:12px; object-fit:cover; }
+.pod-right { flex:1; min-width:280px; }
+.meta-list { list-style:none; padding-left:0; color:#444; }
+.meta-list li { margin-bottom:6px; }
+.mini-audio-row { display:flex; gap:12px; align-items:flex-start; margin:18px 0; background:rgba(0,0,0,0.03); padding:10px; border-radius:10px; }
+.mini-thumb { width:90px; height:90px; object-fit:cover; border-radius:8px; }
+.mini-text p { margin:6px 0 0 0; font-size:0.95rem; color:#333; }
+.player-box audio { width:100%; margin-top:8px; }
+
+/* long text */
+.pod-long-text { padding: 2rem 5%; background:#fff; border-top:1px solid #eee; margin-top:20px; border-radius:8px; max-width:1100px; margin-left:auto; margin-right:auto; }
+.pod-long-text h2 { margin-bottom:12px; color:#4a2b4b; }
+
+/* responsive */
+@media (max-width:900px) {
+  .pod-detail { flex-direction:column; }
+  .pod-left { flex-basis:100%; }
+  .pod-right { flex-basis:100%; }
+  .pod-main-grid { gap:16px; padding: 1rem 3%; }
+}

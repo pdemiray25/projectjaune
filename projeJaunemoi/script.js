@@ -7,7 +7,18 @@ if (toggleBtn) {
     navLinks.classList.toggle("active");
   });
 }
+  // Tüm navbar linklerini seç
+  const navvLinks = document.querySelectorAll('.nav-links a');
 
+  // Şu anki URL'nin son kısmını al (örn: index.html)
+  const currentPage = window.location.pathname.split("/").pop();
+
+  navvLinks.forEach(link => {
+    // linkin href'si şu anki sayfaya eşitse "active" sınıfını ekle
+    if(link.getAttribute('href') === currentPage){
+      link.classList.add('active');
+    }
+  });
 /* AUDIO PLAYER */
 const player = document.getElementById('player');
 let currentBtn = null;
@@ -46,7 +57,11 @@ player.addEventListener('pause', () => {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+
+
+
+ /* POP UP MODAL 
+ document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("privacy-modal");
   const link = document.getElementById("privacy-link");
   const closeBtn = modal.querySelector(".close");
@@ -64,6 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.target === modal) modal.classList.remove("show");
   });
 });
-
+*/
 
 

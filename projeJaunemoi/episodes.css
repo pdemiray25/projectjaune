@@ -43,6 +43,15 @@
 .nav-links a:hover {
   color: #FFC300;
 }
+/* Aktif sayfa için */
+
+.nav-links a.active {
+  border-bottom: 3px solid #FFC300; /* alt çizgi */
+  font-weight: bold;
+  padding-bottom: 2px;
+  display: inline-block; 
+  font-weight: bold;
+} 
 
 /* Hamburger button */
 .menu-toggle {
@@ -79,103 +88,6 @@
   .menu-toggle {
     display: block;
   }
-}
-
-
-/* BANNER */
-.banner {
-  background-image: url("images/bannernew.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-}
-
-.banner-content {
-  position: relative;
-  z-index: 2;
-  color: white;
-  padding: 20px;
-}
-
-.banner-content h1 {
-  font-size: 3.2rem;
-  margin-bottom: 10px;
-  color: #FFC300;
-  font-weight: 800;
-  text-shadow: 0 0 10px rgba(255, 195, 0, 0.3);
-}
-
-.banner-content p {
-  font-size: 1.4rem;
-  margin-bottom: 45px;
-  color: #f8f8f8;
-  opacity: 0.9;
-}
-
-.search-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.buton {
-  background-color: #FFC300;
-  border: none;
-  padding: 14px 28px;
-  border-radius: 30px;
-  font-size: 1.1rem;
-  color: #2c2c2c;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.buton:hover {
-  background-color: #c19401;
-  box-shadow: 0 6px 14px rgba(255, 195, 0, 0.55);
-}
-
-/* QUI SOMMES-NOUS — CARD */
-.intro {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 40px 50px;
-  background: #ffffff;
-  border-radius: 18px;
-
-  box-shadow:
-    0 4px 0 rgba(255, 210, 61,0.18),
-    0 0 12px rgba(94, 94, 94, 0.12);
-
-  border-right: 4px solid #FFC300;
-  text-align: center;
-}
-
-.intro h1 {
-  font-size: 2.2rem;
-  color: #070705;
-  font-weight: 700;
-  margin-bottom: 18px;
-  text-shadow: 0 0 6px rgba(255, 195, 0, 0.25);
-}
-
-.intro p {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  color: #2c2c2c;
-  max-width: 950px;
-  margin: auto;
 }
 
 /* LAST EPISODES */
@@ -619,7 +531,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #FFC300; /* Sarı */
+  background: rgb(254, 196, 4); /* Sarı */
   color: #000;
   display: flex;
   align-items: center;
@@ -879,10 +791,7 @@
   transform: translateY(-5px);
 }
 
-
-/* ========================= */
 /*        RESPONSIVE         */
-/* ========================= */
 
 /* TABLET → 2 kolon */
 @media (max-width: 768px) {

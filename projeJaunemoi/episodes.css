@@ -90,301 +90,6 @@
   }
 }
 
-/* LAST EPISODES */
-.recent-podcasts {
-  text-align: center;
-  padding: 60px 10%;
-  font-size: 1.2rem;
-}
-
-.recent-podcasts h2 {
-  font-size: 2.2rem;
-  color: #453548;
-  margin-bottom: 10px;
-}
-
-.recent-podcasts p {
-  color: #282222;
-  margin-bottom: 40px;
-  font-size: larger;
-}
-
-.podcast-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.podcast-card {
-  background: #fff;
-  border-radius: 15px;
-  width: 300px;
-  overflow: hidden;
-  transition: 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.podcast-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.podcast-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.podcast-card a {
-  display: block;
-  padding: 15px 10px 5px;
-  text-decoration: none;
-  color: #252524;
-  font-weight: bold;
-}
-
-.podcast-card a:hover {
-  text-decoration: underline;
-}
-
-.podcast-card button {
-  background-color: #FFC300;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 8px 16px;
-  margin: 10px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.podcast-card button:hover {
-  background-color: #ba9009;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 40px;
-  background-color: #FFC300;
-  color: #fff;
-  padding: 12px 28px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  transition: 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #FFC300;
-}
-
-@media (max-width: 768px) {
-  .podcast-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-
-/* Newsletter 
-.newsletter {
-    padding: 3rem 2rem;
-    text-align: center;
-    background-color: #f9f6fb;
-    font-size: large;
-}
-
-.newsletter form {
-    margin-top: 1.5rem;
-}
-
-.newsletter input[type="email"] {
-    padding: 0.7rem;
-    width: 250px;
-    border: 1px solid #a9a5a5;
-    border-radius: 5px;
-    margin-right: 0.5rem;
-}
-
-.newsletter button {
-    padding: 0.7rem 1.2rem;
-    background-color: #f9c400;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.newsletter button:hover {
-  background-color: #FFC300;
-} */
-/* =======================
-       FOOTER
-======================= */
-
-/* ===== FOOTER GENEL ===== */
-.footer {
-  background-color: #111;
-  color: #ddd;
-  padding: 50px 5%;
-  font-family: "Poppins", sans-serif;
-}
-
-/* ===== GRID DÜZEN ===== */
-.footer-top {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 eşit kolon */
-  gap: 40px;
-  align-items: flex-start;
-  margin-bottom: 40px;
-}
-
-/* ===== LOGO + YAZI ===== */
-.footer-brand {
-  display: flex;
-  align-items: center;   /* dikey ortala */
-  gap: 15px;             /* logo ile yazı arası boşluk */
-}
-
-.footer-logo {
-  height: 20px;
-}
-
-.footer-brand-text h2 {
-  font-size: 1.2rem;
-  color: #FFC300;        /* logo rengi */
-  margin-bottom: 5px;
-  font-weight: 700;
-}
-
-.footer-brand-text p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #ddd;
-}
-
-/* ===== SÜTUN BAŞLIKLARI ===== */
-.footer h3 {
-  font-size: 1.1rem;
-  margin-bottom: 12px;
-  color: #FFC300;
-}
-
-/* ===== LİNKLER ===== */
-.footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer ul li {
-  margin-bottom: 8px;
-}
-
-.footer a {
-  color: #eee;
-  text-decoration: none;
-  font-size: 0.97rem;
-  transition: color 0.3s ease;
-}
-
-.footer a:hover {
-  color: #FFC300;
-}
-
-/* ===== SOSYAL MEDYA ===== */
-/* Sosyal ikonlar container */
-.social-icons {
-  display: flex;
-  gap: 15px;          /* ikonlar arası boşluk */
-  align-items: center;
-}
-
-/* İkon boyutu ve hover efekti */
-.social-icons img {
-  width: 32px;       /* ikon boyutu */
-  height: 32px;
-  object-fit: contain;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.social-icons a:hover img {
-  transform: scale(1.2);       /* hover büyütme efekti */
-  filter: brightness(1.2);     /* hafif parlaklık efekti */
-}
-
-
-/* ===== ALT KISIM ===== */
-.footer-bottom {
-  text-align: center;
-  padding-top: 25px;
-  border-top: 1px solid #333;
-  color: #bbb;
-  font-size: 0.9rem;
-}
-
-/* ===== RESPONSIVE ===== */
-
-/* ===== Tablet (max-width: 768px) ===== */
-@media (max-width: 768px) {
-  .footer-top {
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-  }
-
-  .footer-brand {
-    justify-content: center;
-  }
-
-  .footer-links,
-  .footer-info,
-  .footer-social {
-    width: 100%;
-    text-align: center;
-  }
-
-  .social-icons {
-    justify-content: center;
-    width: 100%;
-  }
-}
-
-/* ===== Mobil (max-width: 480px) ===== */
-@media (max-width: 480px) {
-
-  .footer-top {
-    grid-template-columns: 1fr;
-    gap: 25px;
-    text-align: center;
-  }
-
-  .footer-brand,
-  .footer-links,
-  .footer-info,
-  .footer-social {
-    width: 100%;            /* HİZALAMA GARANTİSİ */
-    justify-content: center;
-  }
-
-  .footer-brand {
-    flex-direction: column;
-  }
-
-  .social-icons {
-    justify-content: center;
-    width: 100%;            /* İKONLAR TAM ORTADA */
-    margin-top: 10px;
-  }
-}
-
-/* PODCASTS */
-
-/* ============================
-      PODCASTS — HERO
-============================ */
-
-
 /* HERO – Épisodes sayfası */
 .pod-hero {
   width: 100%;
@@ -395,7 +100,7 @@
 }
 
 .pod-hero h1 {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 10px;
   font-family: "Poppins", sans-serif;
@@ -562,12 +267,12 @@
 .pod-title {
   margin: 5px 0;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   color: #2d2d2d;
 }
 
 .pod-desc {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #484747;
   line-height: 1.3;
   margin-top: 5px;
@@ -648,7 +353,7 @@
 }
 
 .pod-note blockquote {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #453548;
   font-style: italic;
   margin-bottom: 20px;
@@ -811,4 +516,194 @@
     max-width: 260px; /* Mobilde daha geniş kart */
   }
 }
+
+
+
+/* Newsletter 
+.newsletter {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f9f6fb;
+    font-size: large;
+}
+
+.newsletter form {
+    margin-top: 1.5rem;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.7rem;
+    width: 250px;
+    border: 1px solid #a9a5a5;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+
+.newsletter button {
+    padding: 0.7rem 1.2rem;
+    background-color: #f9c400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.newsletter button:hover {
+  background-color: #FFC300;
+} */
+
+/* ===== FOOTER GENEL ===== */
+.footer {
+  background-color: #111;
+  color: #ddd;
+  padding: 50px 5%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== GRID DÜZEN ===== */
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 eşit kolon */
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+/* ===== LOGO + YAZI ===== */
+.footer-brand {
+  display: flex;
+  align-items: center;   /* dikey ortala */
+  gap: 15px;             /* logo ile yazı arası boşluk */
+}
+
+.footer-logo {
+  height: 20px;
+}
+
+.footer-brand-text h2 {
+  font-size: 1.2rem;
+  color: #FFC300;        /* logo rengi */
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.footer-brand-text p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+/* ===== SÜTUN BAŞLIKLARI ===== */
+.footer h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #FFC300;
+}
+
+/* ===== LİNKLER ===== */
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 0.97rem;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #FFC300;
+}
+
+/* ===== SOSYAL MEDYA ===== */
+/* Sosyal ikonlar container */
+.social-icons {
+  display: flex;
+  gap: 15px;          /* ikonlar arası boşluk */
+  align-items: center;
+}
+
+/* İkon boyutu ve hover efekti */
+.social-icons img {
+  width: 32px;       /* ikon boyutu */
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);       /* hover büyütme efekti */
+  filter: brightness(1.2);     /* hafif parlaklık efekti */
+}
+
+
+/* ===== ALT KISIM ===== */
+.footer-bottom {
+  text-align: center;
+  padding-top: 25px;
+  border-top: 1px solid #333;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* ===== Tablet (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+
+  .footer-brand {
+    justify-content: center;
+  }
+
+  .footer-links,
+  .footer-info,
+  .footer-social {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* ===== Mobil (max-width: 480px) ===== */
+@media (max-width: 480px) {
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-info,
+  .footer-social {
+    width: 100%;            /* HİZALAMA GARANTİSİ */
+    justify-content: center;
+  }
+
+  .footer-brand {
+    flex-direction: column;
+  }
+
+  .social-icons {
+    justify-content: center;
+    width: 100%;            /* İKONLAR TAM ORTADA */
+    margin-top: 10px;
+  }
+}
+
+
 
